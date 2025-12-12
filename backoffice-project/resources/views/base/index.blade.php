@@ -45,8 +45,9 @@
             <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
                 <!--begin::Content wrapper-->
                 <div class="d-flex flex-column flex-column-fluid">
-@include('base.layout.partials/_toolbar')
-@yield('contenido')
+@yield('page-title') {{-- ✅ toolbar area (breadcrumbs, etc.) --}}
+@yield('content')     {{-- ✅ main content area --}}
+
                                     </div>
                 <!--end::Content wrapper-->
 @include('base.layout.partials/_footer')

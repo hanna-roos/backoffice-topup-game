@@ -7,6 +7,29 @@
 // Body bg
 $body-bg-dark:						$coal-100;
 
+//page background
+// Gradient Background Override for Metronic Demo 1
+html {
+    background: transparent !important;
+}
+
+body.app-default {
+    background: linear-gradient(180deg, #123498 0%, #000000 100%) !important;
+    background-attachment: fixed !important;
+}
+
+/* Make all Metronic wrappers transparent */
+#kt_app_root,
+#kt_app_page,
+#kt_app_wrapper,
+#kt_app_main,
+#kt_app_content,
+.app-wrapper,
+.app-main,
+.app-content {
+    background: transparent !important;
+}
+
 // Card
 $card-box-shadow:                   0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 $card-box-shadow-dark:  			none;
