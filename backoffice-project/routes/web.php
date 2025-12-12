@@ -23,3 +23,15 @@ Route::prefix('catalog/categories')->group(function () {
     Route::put('/{id}', [CategoryController::class, 'update'])->name('categories.update');
     Route::delete('/{id}', [CategoryController::class, 'destroy'])->name('categories.destroy');
 });
+
+use App\Http\Controllers\OrderController;
+
+Route::prefix('sales/order')->group(function () {
+    Route::get('/', [OrderController::class, 'index'])->name('order.index');
+    Route::get('/create', [OrderController::class, 'create'])->name('order.create');
+    Route::post('/', [OrderController::class, 'store'])->name('order.store');
+    Route::get('/{id}/view', [OrderController::class, 'view'])->name('order.view');
+    Route::get('/{id}/edit', [OrderController::class, 'edit'])->name('order.edit');
+    Route::put('/{id}', [OrderController::class, 'update'])->name('order.update');
+    Route::delete('/{id}', [OrderController::class, 'destroy'])->name('order.destroy');
+});

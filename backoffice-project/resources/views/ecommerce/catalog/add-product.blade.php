@@ -298,24 +298,7 @@
 												<!--end::Card body-->
 											</div>
 											<!--end::Category & tags-->
-											<!--begin::Weekly sales-->
-											<div class="card card-flush py-4">
-												<!--begin::Card header-->
-												<div class="card-header">
-													<!--begin::Card title-->
-													<div class="card-title">
-														<h2>Weekly Sales</h2>
-													</div>
-													<!--end::Card title-->
-												</div>
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												<div class="card-body pt-0">
-													<span class="text-muted">No data available. Sales data will begin capturing once product has been published.</span>
-												</div>
-												<!--end::Card body-->
-											</div>
-											<!--end::Weekly sales-->
+
 											<!--begin::Template settings-->
 											<div class="card card-flush py-4">
 												<!--begin::Card header-->
