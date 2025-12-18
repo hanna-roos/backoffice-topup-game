@@ -86,7 +86,10 @@
 													<!--end::Select2-->
 												</div> --}}
 												<!--begin::Add product-->
-												<a href="/catalog/products/create" class="btn btn-primary">Add Product</a>
+												<a href="{{ route('products.create') }}" class="btn btn-primary">
+    Add Product
+</a>
+
 												<!--end::Add product-->
 											</div>
 											<!--end::Card toolbar-->

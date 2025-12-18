@@ -24,7 +24,7 @@ import KTToggle from './components/toggle.js';
 import KTAppSidebar from './layout/sidebar.js';
 import KTLayoutSearch from './layout/search.js';
 import KTLayoutToolbar from './layout/toolbar.js';
-import KTThemeMode, { init } from './layout/theme-mode.js';
+import KTThemeMode from './layout/theme-mode.js';
 import KTThemeModeUser from './layout/theme-mode-user.js';
 
 export default {
