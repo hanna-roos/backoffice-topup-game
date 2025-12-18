@@ -35,3 +35,18 @@ Route::prefix('sales/order')->group(function () {
     Route::put('/{id}', [OrderController::class, 'update'])->name('order.update');
     Route::delete('/{id}', [OrderController::class, 'destroy'])->name('order.destroy');
 });
+
+use App\Http\Controllers\CustomersController;
+
+Route::prefix('customers/listing')->group(function () {
+
+    Route::get('/', [CustomersController::class, 'index'])->name('customers.index');
+    Route::get('/create', [CustomersController::class, 'create'])->name('customers.create');
+    Route::post('/', [CustomersController::class, 'store'])->name('customers.store');
+    Route::get('/{id}/edit', [CustomersController::class, 'edit'])->name('customers.edit');
+    Route::put('/{id}', [CustomersController::class, 'update'])->name('customers.update');
+    Route::get('/{id}', [CustomersController::class, 'show'])->name('customers.show');
+    Route::delete('/{id}', [CustomersController::class, 'destroy'])->name('customers.destroy');
+
+
+});
